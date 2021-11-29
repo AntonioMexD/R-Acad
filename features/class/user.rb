@@ -19,8 +19,6 @@ class User
 	def isLogged
         actualPage = page.evaluate_script("window.location.href").to_s
         expect(actualPage).to eq "https://www.r-acad.com/"
-        # text = page.evaluate_script('document.querySelector("#user-name").textContent').to_s
-		# expect(text.include? "Test prueba").to be true
 	end
 
 	def clickLoginButton
