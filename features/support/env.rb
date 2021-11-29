@@ -5,8 +5,8 @@ require 'capybara/cucumber'
 require 'capybara-screenshot/cucumber'
 
 #PTravel Settings
-ENV['USER']="Pepazo"
-ENV['PSW']="ILoveQA"
+ENV['USER']="test.ucb.calidad@gmail.com"
+ENV['PSW']="test123"
 
 Capybara.default_driver = :selenium
 
@@ -16,7 +16,7 @@ Capybara.app_host = ENV["CAPYBARA_HOST"]
 # Set the time (in seconds) Capybara should wait for elements to appear on the page
 Capybara.default_max_wait_time = 15
 Capybara.default_driver = :selenium
-Capybara.app_host = "http://www.google.com"
+Capybara.app_host = "https://www.r-acad.com/"
 
 class CapybaraDriverRegistrar
   # register a Selenium driver for the given browser to run on the localhost
