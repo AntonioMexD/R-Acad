@@ -1,26 +1,25 @@
 Before do
     @user = User.new
-  end  
-  Given('I navigate R-acad web page') do
-    pending
+    @miCuentaSteps = MiCuentaSteps.new
+  end
+
+  Given('Im logged in r-acad') do
+    @user.login
   end
   
-  When('I type in “current password” field {string}') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+  When('I navigate to Mi Cuenta page') do
+    button="#menu-item-70 > a > i"
+    find(:css,button).click
   end
-  
-  When('I type in “agregue su nueva contraseña” field “test12345”') do
-    pending # Write code here that turns the phrase above into concrete actions
-  end
-  
-  When('I type in “repita su nueva contraseña” field “test12345”') do
-    pending # Write code here that turns the phrase above into concrete actions
+
+  When('I fill the passwords fields with the information as shown as below') do |table|
+    @miCuentaSteps.fillPasswords(table)
   end
   
   When('I click in “Guardar los cambios” button') do
-    pending # Write code here that turns the phrase above into concrete actions
+    click_on ('submit')
   end
-  
-  Then('I should see a message on the top of the screen that says “Su configuración ha sido guardada”') do
-    pending # Write code here that turns the phrase above into concrete actions
+  Then('I should see a message on the top of the screen that says “Su configuración ha sido guardada.”') do
+    message="#item-header > aside > p"
+    find(message) == "Su configuración ha sido guardada."
   end
