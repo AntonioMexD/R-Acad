@@ -1,7 +1,7 @@
 class User
 	include RSpec::Matchers
 	include Capybara::DSL
-	def enterBrowser
+	def enterWebPage
 		page.driver.browser.manage.window.maximize
 		visit('')
 	end
