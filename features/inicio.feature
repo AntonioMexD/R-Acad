@@ -17,3 +17,13 @@ Feature: View Courses
       | curso8:   | Curso de edición de video con Vegas Pro |
       | curso9:   | Curso completo de Photoshop desde Cero  |
       | curso710: | Curso básico de Robótica con Arduino    |
+
+  @soc
+  Scenario: See one course
+    Given I am on the R-acad Home Page
+    When I click the “Inicio” button
+    And I click on Word course
+    Then I should see the detail of the course
+      | courseName:     | Word      |
+      | instructorName: | Sebastián |
+      | content:        | 1 Lección  |
