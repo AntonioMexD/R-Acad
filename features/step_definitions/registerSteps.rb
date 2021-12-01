@@ -1,5 +1,5 @@
 Before do
-  @registerSteps = RegisterSteps.new
+  @registerSteps = Register.new
 end
 
 Given('I navigate to Register page') do

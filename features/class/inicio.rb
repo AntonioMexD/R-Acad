@@ -1,0 +1,47 @@
+class Inicio
+	include RSpec::Matchers
+	include Capybara::DSL
+
+    def compareTitles(table)
+        data = table.rows_hash
+        data.each_pair do |key, value|
+            case key
+              when "curso1:"
+                find('#ld-course-list-content-6bff6326b614b5f92cd2dac85b7a4e01 > div > div:nth-child(1) > div > div.bb-card-course-details > h2 > a') == "Curso"
+              when "curso2:"
+                find('#ld-course-list-content-6bff6326b614b5f92cd2dac85b7a4e01 > div > div:nth-child(2) > div > div.bb-card-course-details > h2 > a') == "Word"
+              when "curso3:"
+                find('#ld-course-list-content-6bff6326b614b5f92cd2dac85b7a4e01 > div > div:nth-child(3) > div > div.bb-card-course-details > h2 > a') == "Excel"
+              when "curso4:"
+                find('#ld-course-list-content-6bff6326b614b5f92cd2dac85b7a4e01 > div > div:nth-child(4) > div > div.bb-card-course-details > h2 > a') == "Hacer un estudio de grabacion"
+              when "curso5:"
+                find('#ld-course-list-content-6bff6326b614b5f92cd2dac85b7a4e01 > div > div:nth-child(5) > div > div.bb-card-course-details > h2 > a') == "Como decorar con neón"
+              when "curso6:"
+                find('#ld-course-list-content-6bff6326b614b5f92cd2dac85b7a4e01 > div > div:nth-child(6) > div > div.bb-card-course-details > h2 > a') == "Adobe illustrator"
+              when "curso7:"
+                find('#ld-course-list-content-6bff6326b614b5f92cd2dac85b7a4e01 > div > div:nth-child(7) > div > div.bb-card-course-details > h2 > a') == "Como hacer milkshakes"
+              when "curso8:"
+                find('#ld-course-list-content-6bff6326b614b5f92cd2dac85b7a4e01 > div > div:nth-child(8) > div > div.bb-card-course-details > h2 > a') == "Curso de edición de video con Vegas Pro"
+              when "curso9:"
+                find('#ld-course-list-content-6bff6326b614b5f92cd2dac85b7a4e01 > div > div:nth-child(9) > div > div.bb-card-course-details > h2 > a') == "Curso completo de Photoshop desde Cero"
+              when "curso10:"
+                find('#ld-course-list-content-6bff6326b614b5f92cd2dac85b7a4e01 > div > div:nth-child(10) > div > div.bb-card-course-details > h2 > a') == "Curso básico de Robótica con Arduino"
+            end 
+        end
+    end
+
+
+    def compareContent(table)
+      data = table.rows_hash
+      data.each_pair do |key, value|
+          case key
+            when "courseName:"
+              find('#learndash_post_533 > div > div.bb-vw-container.bb-learndash-banner > div > div > div > h1') == "Word"
+            when "instructorName:"
+              find('#learndash_post_533 > div > div.bb-grid > div.bb-learndash-content-wrap > div.bb-about-instructor.bb-about-instructor--is-info > div > div.bb-instructor-wrap.flex > div.bb-content-wrap > h5 > a') == "Sebastián"
+            when "content:"
+              find('#learndash_post_533 > div > div.bb-grid > div.bb-single-course-sidebar.bb-preview-wrap > div.bb-ld-sticky-sidebar.is_stuck > div > div.bb-course-preview-content > div.bb-course-volume > ul > li') == "1 Lección"
+          end 
+      end
+  end
+end

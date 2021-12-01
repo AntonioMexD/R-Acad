@@ -1,4 +1,4 @@
-class MyProfileSteps
+class MyProfile
 	include RSpec::Matchers
 	include Capybara::DSL
 
