@@ -12,7 +12,7 @@ class MiCuentaSteps
                 find('#pass1').set("test12345")
               when "Repita su nueva contraseña:"
                 find('#pass2').set('test12345')
-            end
+            end 
         end
     end
 end
