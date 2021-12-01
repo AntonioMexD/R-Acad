@@ -18,3 +18,8 @@ Then('I should see a message that say “Antes de que pueda iniciar sesión, deb
   message="#register-page > aside > p"
   find(message) == "Antes de que pueda iniciar sesión, debe confirmar su dirección de correo electrónico a través del correo electrónico que le acabamos de enviar."
 end
+
+#To be implemented
+Then('I should see the confirmation mail') do
+  pending # Write code here that turns the phrase above into concrete actions
+end

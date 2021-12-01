@@ -17,7 +17,7 @@ class RegisterSteps
     data.each_pair do |key, value|
         case key
           when "Correo electronico:"
-            find('#signup_email').set("estebanUcb@gmail.com")
+            find('#signup_email').set("estebUcb@gmail.com")
           when "contraseña:"
             find('#signup_password').set("123456")
           when "confirmar contraseña:"
@@ -27,7 +27,7 @@ class RegisterSteps
           when "Apellido:"
             find('#field_2').set('UCB test')
           when "Nombre de usuario:"
-            find('#field_3').set('estUcb')
+            find('#field_3').set('estebUcb')
         end 
     end
 end
