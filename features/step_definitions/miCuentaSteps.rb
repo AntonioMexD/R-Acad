@@ -1,6 +1,6 @@
 Before do
     @user = User.new
-    @miCuentaSteps = MiCuentaSteps.new
+    @miCuentaSteps = MiCuenta.new
   end
 
   Given('Im logged in r-acad') do

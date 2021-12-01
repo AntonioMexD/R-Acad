@@ -1,6 +1,6 @@
 Before do
   @user = User.new
-  @myProfileSteps = MyProfileSteps.new
+  @myProfileSteps = MyProfile.new
 end
 
 Given('I click on Mi Perfil option') do
@@ -13,7 +13,7 @@ When('I click on “Editar Perfil” button') do
     find(:css,button).click
 end
 
-When('I fill the fields with the information as shown as below') do |table|
+When('I fill the personal information fields with the information as shown as below') do |table|
   @myProfileSteps.fillPersonalInformation(table)
 end
 

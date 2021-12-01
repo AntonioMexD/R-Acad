@@ -1,4 +1,4 @@
-class MiCuentaSteps
+class MiCuenta
 	include RSpec::Matchers
 	include Capybara::DSL
 

@@ -1,4 +1,4 @@
-class RegisterSteps
+class Register
 	include RSpec::Matchers
 	include Capybara::DSL
 

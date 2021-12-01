@@ -21,6 +21,6 @@ Before do
   end
 
   Then('I should see the next message {string}') do |string|
-    string = "#ld-tab-content-493 > p"
-    find(string) == "En este curso aprenderás a como hacer milkshakes"
+    message = "#ld-tab-content-485 > p"
+    find(message) == "En este curso aprenderás a como hacer milkshakes"
   end
