@@ -26,3 +26,23 @@ Then('I should see a message on the top of the screen that says “Cambios guard
   message="#item-header > aside > p"
   find(message) == "Cambios guardados."
 end
+
+When('I click on “Cursos” option') do
+  button="#user-courses"
+  find(:css,button).click
+end
+
+When('I click on “Curso” course') do
+  button="#course-dir-list > ul > li > div > div.bb-card-course-details > h2 > a"
+  find(:css,button).click
+end
+
+Then('I should see my courses') do
+  message="#course-dir-list > ul > li > div > div.bb-card-course-details > h2 > a"
+  find(message) == "Curso"
+end
+
+Then('I should see the detail of the my course') do |table|
+  @myProfileSteps.compareContent(table)
+end
+
