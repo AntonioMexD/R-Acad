@@ -15,4 +15,11 @@ class MiCuenta
             end 
         end
     end
+
+    def resetPassword
+      find('#pwd').set('test12345')
+      find('#pass1').set(ENV['PSW'])
+      find('#pass2').set(ENV['PSW'])
+      click_on ('submit')
+    end
 end

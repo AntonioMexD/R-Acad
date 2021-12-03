@@ -1,5 +1,5 @@
 Feature:  Subscribe
-  As a user
+  As a user interested in online courses
   I want to subscribe in the page
   So that I can received promotions
 

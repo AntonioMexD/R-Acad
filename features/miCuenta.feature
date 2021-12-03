@@ -1,8 +1,9 @@
 Feature: Update credentials
-  As a user
+  As a registered user
   I want to update my credentials
   So that my account is more secure
 
+@changePassword
 Scenario: Update password
     Given Im logged in r-acad
     When I navigate to Mi Cuenta page

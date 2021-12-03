@@ -3,6 +3,10 @@ Before do
     @miCuentaSteps = MiCuenta.new
   end
 
+  After ('@changePassword') do
+    @miCuentaSteps.resetPassword
+  end
+
   Given('Im logged in r-acad') do
     @user.login
   end
