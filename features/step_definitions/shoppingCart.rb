@@ -24,7 +24,7 @@ Given('I have one course added in the shopping cart') do
     find(:css, label).click
   end
   
-  Then('I should see the name course I added') do
+  And('I should see the name course I added') do
     nameCourse = "#post-29 > div > div > form > table > tbody > tr:nth-child(1) > td.product-name > a"
     find(nameCourse) == "Como hacer milkshakes"
   end
