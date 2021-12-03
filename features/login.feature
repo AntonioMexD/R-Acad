@@ -1,7 +1,7 @@
 Feature:  Login account
     As a user
     I want to login with my account 
-    So that I can see the user options
+    So that Ican verify the login
 
 
 Scenario: Login successful
