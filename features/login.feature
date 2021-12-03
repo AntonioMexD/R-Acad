@@ -9,3 +9,4 @@ Scenario: Login successful
     And I enter my credentials 
     When I click "Iniciar Sesión" button
     Then I should see the Home page
+    And I should see my name in the upper right corner

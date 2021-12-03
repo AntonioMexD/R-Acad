@@ -16,3 +16,7 @@ Before do
   Then('I should see the Home page') do
     @user.isLogged
   end
+
+  Then('I should see my name in the upper right corner') do
+    @user.verifyName
+  end

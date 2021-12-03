@@ -44,3 +44,8 @@ Then('I should see the detail of the my course') do |table|
   @myProfileSteps.compareContent(table)
 end
 
+Then('I should see my new name in the upper right corner') do
+  message="#header-aside > div > div.user-wrap.user-wrap-container.menu-item-has-children > a > span"
+  find(message) == "Ucb Test"
+end
+
