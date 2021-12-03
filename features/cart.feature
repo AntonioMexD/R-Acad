@@ -1,5 +1,5 @@
 Feature: Course added shopping cart
-    As an user
+    As a user interested in online courses
     I want to add a course to the cart
     So that I can buy and study
 

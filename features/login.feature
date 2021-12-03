@@ -1,5 +1,5 @@
 Feature:  Login account
-    As a user
+    As a registered user
     I want to login with my account 
     So that Ican verify the login
 

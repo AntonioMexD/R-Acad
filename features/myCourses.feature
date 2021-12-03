@@ -1,5 +1,5 @@
 Feature: View my Courses
-  As an user
+  As an registered user
   I want to see my courses
   So that I can pass my courses
 

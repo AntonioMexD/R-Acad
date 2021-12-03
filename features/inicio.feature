@@ -1,5 +1,5 @@
 Feature: View Courses
-  As an user
+  As a user interested in online courses
   I want to see the courses from Inicio page
   So that I can see the courses that I like and decide if I register in the web
 

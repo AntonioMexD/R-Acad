@@ -1,5 +1,5 @@
 Feature: Update preferenes
-  As a user
+  As a registered user
   I want to change my account preferences
   So I can show and retrive the information that I want from the website
 

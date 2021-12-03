@@ -1,5 +1,5 @@
 Feature: Register on the page
-  As a user
+  As a user interested in online courses
   I want to register on the page
   So that I get courses
 

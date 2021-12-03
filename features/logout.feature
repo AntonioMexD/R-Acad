@@ -1,5 +1,5 @@
 Feature:  Login account
-  As a user
+  As a registered user
   I want to lout of my account
   So that Someone else don't use my account
 
