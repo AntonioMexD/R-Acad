@@ -1,5 +1,5 @@
 Feature:  Edit my profile
-  As a registered user
+  As a registered user of R-Acad
   I want to change my personal information
   So that I can change it if there is an error in my information
 

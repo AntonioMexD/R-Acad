@@ -1,5 +1,5 @@
 Feature: Shopping cart
-    As an user
+    As an user of R-Acad
     I want to remove a course from the cart
     Entonces, como quiero comprar otro curso
 

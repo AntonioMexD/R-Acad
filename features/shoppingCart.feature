@@ -1,5 +1,5 @@
 Feature: Shopping cart
-    As an registered user
+    As an registered user R-Acad
     I want to see the shopping cart
     So to see what products I have in the cart.
 

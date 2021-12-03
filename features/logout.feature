@@ -1,5 +1,5 @@
 Feature:  Login account
-  As a registered user
+  As a registered user R-Acad
   I want to lout of my account
   So that Someone else don't use my account
 

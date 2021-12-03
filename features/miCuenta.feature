@@ -1,5 +1,5 @@
 Feature: Update credentials
-  As a registered user
+  As a registered user R-Acad
   I want to update my credentials
   So that my account is more secure
 

@@ -1,5 +1,5 @@
 Feature: Update credentials
-  As a logged user
+  As a logged user of R-Acad
   I send messages
   So that I can comunicate with other participants
 

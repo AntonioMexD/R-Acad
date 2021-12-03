@@ -1,5 +1,5 @@
 Feature: View my Courses
-  As an registered user
+  As an registered user R-Acad
   I want to see my courses
   So that I can pass my courses
 
