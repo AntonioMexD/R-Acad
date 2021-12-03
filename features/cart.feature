@@ -26,6 +26,7 @@ Scenario: Add the same course to the cart
     And I click on "Añadir al carrito" button yellow
     Then I should see the next alert message "No puedes añadir otro «Como hacer milkshakes» a tu carrito." in color red
 
+@failed
 Scenario: Add to cart failed
     Given I click the "Cursos" button
     Then I should see the "Todos Cursos"
