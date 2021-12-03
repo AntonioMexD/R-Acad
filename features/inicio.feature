@@ -26,4 +26,3 @@ Feature: View Courses
     Then I should see the detail of the course
       | courseName:     | Word      |
       | instructorName: | Sebastián |
-      | content:        | 1 Lección  |
