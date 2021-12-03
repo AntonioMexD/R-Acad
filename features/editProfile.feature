@@ -14,3 +14,4 @@ Feature:  Edit my profile
       | Nombre de Usuario: | UcbCal   |
     And I click on “Guardar los cambios” option
     Then I should see a message on the top of the screen that says “Cambios guardados.”
+    And I should see my new name in the upper right corner

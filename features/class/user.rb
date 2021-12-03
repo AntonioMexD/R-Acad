@@ -21,15 +21,21 @@ class User
         expect(actualPage).to eq "https://www.r-acad.com/"
 	end
 
+  def verifyName
+    message="#header-aside > div > div.user-wrap.user-wrap-container.menu-item-has-children > a > span"
+    find(message) == "Test ucb"
+end
+
 	def clickLoginButton
         click_on ('wp-submit')
 	end
 
 	def login
-        enterLoginPage
-        fillCredentials
-        clickLoginButton
+    enterLoginPage
+    fillCredentials
+    clickLoginButton
 	 	isLogged
+    verifyName
 	end
 
 end
