@@ -3,7 +3,7 @@ Feature:  Edit my profile
   I want to change my personal information
   So that I can change it if there is an error in my information
 
-
+  @editProfile
   Scenario: Edit My name, last name and user name
     Given Im logged in r-acad
     And I click on Mi Perfil option
