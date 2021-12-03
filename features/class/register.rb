@@ -27,7 +27,7 @@ class Register
           when "Apellido:"
             find('#field_2').set('UCB test')
           when "Nombre de usuario:"
-            find('#field_3').set('estebUcb')
+            find('#field_3').set('estebUcbCal123')
         end 
     end
 end
