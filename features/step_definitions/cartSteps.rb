@@ -27,3 +27,12 @@ Before do
         find(string) == "“Adobe illustrator” se ha añadido a tu carrito."
     end
     
+    When('I click on {string} button text') do |string|
+        string = "#main > div.woocommerce-notices-wrapper > div > a"
+        find(:css, string).click
+    end
+      
+    Then('I should see the name of the product that I added') do
+        name = "#post-29 > div > div > form > table > tbody > tr.woocommerce-cart-form__cart-item.cart_item > td.product-name > a"
+        find(name) == "Como hacer milkshakes"
+    end
