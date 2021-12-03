@@ -3,11 +3,12 @@ Feature: Shopping cart
     I want to see the total price in shopping cart
     So to see the price in the cart.
 
-Background: 
-    Given I am logged user in R-Acad
-
-Scenario: View Shopping Cart
-    Given I have one course added in the shopping cart
+Scenario: View Price Course Shopping Cart
+    Given I am on the R-acad Home Page
+    When I click the "Cursos" button
+    And I click on "Como hacer milkshakes"
+    And I click on "Apuntarme" button
+    And I click on "Añadir al carrito" button yellow
     Then I press on Icon Shopping Cart
     And I press on Ver Carrito Label
     And I should see the name course I added
