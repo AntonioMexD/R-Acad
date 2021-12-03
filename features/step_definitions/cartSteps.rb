@@ -36,3 +36,8 @@ Before do
         name = "#post-29 > div > div > form > table > tbody > tr.woocommerce-cart-form__cart-item.cart_item > td.product-name > a"
         find(name) == "Como hacer milkshakes"
     end
+
+    Then('I should see the next alert message {string} in color red') do |string|
+        messageAlert = "#main > div.woocommerce-notices-wrapper > ul > li"
+        find(messageAlert) == string
+    end
