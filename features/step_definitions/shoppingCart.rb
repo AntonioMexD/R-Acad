@@ -42,3 +42,8 @@ Given('I have one course added in the shopping cart') do
     messageDelete = "#post-29 > div > div > div > div"
     find(messageDelete) == "“Como hacer milkshakes” eliminado."
   end
+
+  Then('I should see the total price {string}') do |string|
+    totalPrice = "#post-29 > div > div > div.cart-collaterals > div > table > tbody > tr.order-total > td > strong > span > bdi"
+    find(totalPrice) == string
+  end
