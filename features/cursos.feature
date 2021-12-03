@@ -19,3 +19,10 @@ Scenario: go to courses from the card - (unregister user)
 Scenario: See detail of a course to start - (unregister user)
     Given I clicked on the name of the course "Marketing Digital"
     Then I should see the course information 
+
+@search
+Scenario: Search for a course
+    Given I click the "Cursos" button
+    And I click on the search engine
+    And I write "Adobe"
+    Then I should see the name of the course searched "Adobe illustrator"

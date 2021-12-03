@@ -3,9 +3,9 @@ Before do
     @user = User.new
 end
 
-After do
-    @myCart.deleteAddedCourse
-end
+# After do
+#     @myCart.deleteAddedCourse
+# end
 
 Given('I am logged user in R-Acad') do
     @user.login

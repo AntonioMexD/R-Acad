@@ -39,4 +39,17 @@ Before do
     pending # Write code here that turns the phrase above into concrete actions
   end
 
+  Given('I click on the search engine') do
+    page.find("#bs_members_search").click
+  end
+
+  Given('I write {string}') do |string|
+    fill_in 'search', :with => string
+    find(:id, 'bs_members_search').native.send_keys(:enter)
+  end
+  
+  Then('I should see the name of the course searched {string}') do |string|
+    courseName = "#course-dir-list > ul.bb-card-list.bb-course-items.grid-view.bb-grid > li > div > div.bb-card-course-details > h2 > a"
+    find(courseName)==string
+  end
   
