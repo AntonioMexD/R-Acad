@@ -7,7 +7,7 @@ Feature: Course added shopping cart
 Background:
     Given I am on the R-acad homepage
 
-@curso
+@addCourseToCart
 Scenario: Add to cart
     Given I click the "Cursos" button
     Then I should see the "Todos Cursos"

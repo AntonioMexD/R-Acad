@@ -3,7 +3,7 @@ Before do
     @user = User.new
 end
 
-After do
+After('@addCourseToCart')do
     @myCart.deleteAddedCourse
 end
 

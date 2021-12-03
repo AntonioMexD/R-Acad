@@ -18,4 +18,3 @@ Feature: View my Courses
     Then I should see the detail of the my course
       | courseName:     | Curso     |
       | instructorName: | Sebastián |
-      | content:        | 1 Lección |
