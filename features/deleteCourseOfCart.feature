@@ -4,7 +4,7 @@ Feature: Shopping cart
     Entonces, como quiero comprar otro curso
 
 Scenario: Delete a course from the cart
-    Given I am logged user in R-Acad
+    Given I am on the R-acad Home Page
     Given I have one course added in the shopping cart
     Then I press on Icon Shopping Cart
     And I press on Ver Carrito Label
