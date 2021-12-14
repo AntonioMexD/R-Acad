@@ -3,6 +3,7 @@ Feature: Update preferenes
   I want to change my account preferences
   So I can show and retrive the information that I want from the website
 
+@updatePassword
 Scenario: Update password
     Given Im logged in r-acad
     When I navigate to Mi Cuenta page

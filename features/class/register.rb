@@ -17,7 +17,7 @@ class Register
     data.each_pair do |key, value|
         case key
           when "Correo electronico:"
-            find('#signup_email').set("renato@gmail.com")
+            find('#signup_email').set("samurai@gmail.com")
           when "contraseña:"
             find('#signup_password').set("123456")
           when "confirmar contraseña:"
@@ -27,7 +27,7 @@ class Register
           when "Apellido:"
             find('#field_2').set('UCB test')
           when "Nombre de usuario:"
-            find('#field_3').set('renatoUcbCal123')
+            find('#field_3').set('Samurai666')
         end 
     end
 end

@@ -1,7 +1,7 @@
 Feature:  Login account
     As a registered user R-Acad
     I want to login with my account 
-    So that Ican verify the login
+    So that I can verify the login
 
 
 Scenario: Login successful
