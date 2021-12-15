@@ -1,10 +1,10 @@
-Feature:  Subscribe
-  As a user interested in online courses
-  I want to subscribe in the page
-  So that I can received promotions
+Feature:  Contact 
+  As a user interested in contact R-acad
+  I want to contact to the administrator
+  So that I can receive more information about their services
 
 
-  Scenario: Subscribe successfully
+  Scenario: contact R-acad
     Given I am on the R-acad Unirse Page
     When I fill the contact fields with the information as shown as below
       | Correo Electronico: | test.ucb.calidad@gmail.com                   |
